@@ -64,7 +64,9 @@ https://blog.csdn.net/zhaojc1995/article/details/80572098
 它扩展了模型专注于不同位置的能力。
 它给出了注意力层的多个“表示子空间”。
 
+![img](https://github.com/SnowZhao-wazi/SnowZhao-wazi.github.io/blob/main/essayNote/img/图片14.jpg)
 
+![img](https://github.com/SnowZhao-wazi/SnowZhao-wazi.github.io/blob/main/essayNote/img/图片15.jpg)
 
 
 

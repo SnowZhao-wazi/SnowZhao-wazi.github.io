@@ -52,19 +52,19 @@ https://blog.csdn.net/zhaojc1995/article/details/80572098
 
 查询thinking得分时，分数通过打分单词（所有输入句子的单词）的键向量与“Thinking”的查询向量求点积获得。
 
+![img](https://github.com/SnowZhao-wazi/SnowZhao-wazi.github.io/blob/main/essayNote/img/图片13.jpg)
+
 第三步和第四步是将分数除以8(8是论文中使用的键向量的维数64的平方根，这会让梯度更稳定。这里也可以使用其它值，8只是默认值)，然后通过softmax传递结果。softmax的作用是使所有单词的分数归一化，得到的分数都是正值且和为1。
 
 第五步是将每个值向量乘以softmax分数。这里是希望关注语义上相关的单词，并弱化不相关的单词。
 
 第六步是对加权值向量求和。（译注：自注意力的另一种解释就是在编码某个单词时，就是将所有单词的表示（值向量）进行加权求和，而权重是通过该词的表示（键向量）与被编码词表示（查询向量）的点积并通过softmax得到。）
 
-![img](https://github.com/SnowZhao-wazi/SnowZhao-wazi.github.io/blob/main/essayNote/img/图片13.jpg)
+![img](https://github.com/SnowZhao-wazi/SnowZhao-wazi.github.io/blob/main/essayNote/img/图片14.jpg)
 
 “多头”注意力（“multi-headed” attention）的机制
 它扩展了模型专注于不同位置的能力。
 它给出了注意力层的多个“表示子空间”。
-
-![img](https://github.com/SnowZhao-wazi/SnowZhao-wazi.github.io/blob/main/essayNote/img/图片14.jpg)
 
 ![img](https://github.com/SnowZhao-wazi/SnowZhao-wazi.github.io/blob/main/essayNote/img/图片15.jpg)
 

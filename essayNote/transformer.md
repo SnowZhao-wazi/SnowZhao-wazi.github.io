@@ -68,5 +68,7 @@ https://blog.csdn.net/zhaojc1995/article/details/80572098
 
 ![img](https://github.com/SnowZhao-wazi/SnowZhao-wazi.github.io/blob/main/essayNote/img/图片15.jpg)
 
+对模型的描述缺少了一种理解输入单词顺序的方法：
+为了让模型理解单词的顺序，我们添加了位置编码向量，将位置向量添加到词嵌入中使得它们在接下来的运算中，能够更好地表达的词与词之间的距离。
 
 
